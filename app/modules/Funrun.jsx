@@ -1,4 +1,6 @@
-import React from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import cupihero from '../../public/webp/cupihero.webp'
 import Funronix from '../../public/webp/Funronix.webp'
@@ -8,7 +10,30 @@ import bintang2 from '../../public/webp/bintang2.webp'
 import pin from '../../public/webp/pin.webp'
 import gununglari from '../../public/webp/gununglari.svg'
 
+const FUN_RUN_DATE = new Date('2026-09-20T00:00:00+07:00')
+
+const getTimeLeft = () => {
+  const diff = FUN_RUN_DATE.getTime() - Date.now()
+  if (diff <= 0) {
+    return { DAY: 0, HOUR: 0, MINUTES: 0, SECONDS: 0 }
+  }
+  return {
+    DAY: Math.floor(diff / (1000 * 60 * 60 * 24)),
+    HOUR: Math.floor((diff / (1000 * 60 * 60)) % 24),
+    MINUTES: Math.floor((diff / (1000 * 60)) % 60),
+    SECONDS: Math.floor((diff / 1000) % 60),
+  }
+}
+
 const Funrun = () => {
+  const [timeLeft, setTimeLeft] = useState(null)
+
+  useEffect(() => {
+    setTimeLeft(getTimeLeft())
+    const timer = setInterval(() => setTimeLeft(getTimeLeft()), 1000)
+    return () => clearInterval(timer)
+  }, [])
+
   return (
     <section className='relative mt-[16%] max-sm:mt-0 max-lg:mt-[0%] min-h-screen w-full overflow-x-clip'>
       <div className='absolute left-[15%] top-[24%] z-1 w-[120%] h-[80%] max-sm:h-[60%] max-sm:top-[0%] max-lg:top-[12%] max-lg:h-[70%] max-sm:translate-y-[-4%] bg-[#FFA2D7] rounded-[50%] blur-[150px] max-sm:blur-[100px]' />
@@ -67,7 +92,9 @@ const Funrun = () => {
           {['DAY', 'HOUR', 'MINUTES', 'SECONDS'].map((label) => (
             <div key={label} className='flex flex-1 flex-col items-center gap-2 max-sm:gap-1'>
               <div className='flex aspect-square w-full items-center justify-center rounded-2xl bg-[#F1D6FF] max-sm:rounded-xl'>
-                <span className='text-4xl font-extrabold text-[#5C2D68] max-lg:text-3xl max-sm:text-lg'>--</span>
+                <span className='text-4xl font-extrabold text-[#5C2D68] max-lg:text-3xl max-sm:text-lg'>
+                  {timeLeft ? String(timeLeft[label]).padStart(2, '0') : '--'}
+                </span>
               </div>
               <span className='text-2xl font-bold tracking-wide text-white max-lg:text-sm max-sm:text-[9px] max-sm:whitespace-nowrap max-sm:tracking-tight'>
                 {label}
