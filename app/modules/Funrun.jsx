@@ -83,9 +83,9 @@ const Funrun = () => {
           </h2>
         </div>
 
-        <div className='flex w-full max-w-[420px] items-center justify-center gap-2 rounded-full border border-white/30 bg-white/5 px-10 py-4 backdrop-blur-sm max-sm:max-w-[300px] max-sm:py-3'>
-          <Image src={pin} alt="Pin" className='h-10 w-auto text-white' />
-          <span className='text-3xl font-bold tracking-wide text-white max-lg:text-2xl max-sm:text-lg'>To Be Announced</span>
+        <div className='inline-flex w-auto max-w-full items-center justify-center gap-2 rounded-full border border-white/30 bg-white/5 px-10 py-4 backdrop-blur-sm max-sm:gap-1 max-sm:px-5 max-sm:py-3'>
+          <Image src={pin} alt="Pin" className='h-10 w-auto shrink-0 text-white max-sm:h-6' />
+          <span className='whitespace-nowrap text-3xl font-bold tracking-wide text-white max-lg:text-2xl max-sm:text-base'>Universitas Gadjah Mada</span>
         </div>
 
         <div className='flex w-full max-w-[820px] px-20 py-10 rounded-2xl backdrop-blur-xs shadow-lg bg-[#BE3A85]/50 border-[0.5px] border-[#BE3A85] items-start justify-center gap-8 max-sm:max-w-[300px] max-sm:gap-2 max-sm:px-4 max-sm:py-5'>

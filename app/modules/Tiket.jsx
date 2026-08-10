@@ -34,7 +34,7 @@ const Tiket = () => {
             <Image src={fasi} width={420} alt="Fasi" className='absolute top-[5%] left-[7%] z-21 rotate-345 drop-shadow-[0_0_25px_rgba(255,255,255,0.7)] max-lg:h-auto max-lg:w-[260px] max-lg:top-30 max-lg:left-2 max-lg:rotate-30 max-sm:w-[140px] max-sm:top-0 max-sm:translate-y-[-10%] max-sm:rotate-30 max-sm:left-[-3%]' />
             <Image src={cupi} width={420} alt="Cupi" className='absolute top-[5%] right-[7%] z-21 rotate-15 drop-shadow-[0_0_25px_rgba(255,255,255,0.7)] max-lg:h-auto max-lg:w-[260px] max-lg:top-[56%] max-sm:w-[140px] max-sm:top-[50%] max-sm:right-0' />
             <Image src={bgtiket} alt="Background Tiket" className='absolute top-[12%] scale-y-110 z-1 w-screen h-auto max-sm:top-[50%] max-sm:translate-y-[-50%] max-lg:hidden max-lg:translate-y-[-50%] max-sm:hidden' />
-            <Image src={gunungtiket} alt="Gunung Tiket" className='absolute top-0 translate-y-[96%] z-1 w-screen h-auto max-sm:top-[70%] max-sm:scale-y-100 max-sm:left-[0%] max-lg:translate-y-[200%] max-sm:translate-y-[50%] max-lg:scale-y-120' />
+            <Image src={gunungtiket} alt="Gunung Tiket" className='absolute top-0 translate-y-[96%] z-1 w-screen h-auto max-sm:top-[65%] max-sm:scale-y-100 max-sm:left-[0%] max-lg:translate-y-[200%] max-sm:translate-y-[50%] max-lg:scale-y-120' />
             {/* <Image src={gunungfooter} alt="Gunung Footer" className='absolute bottom-[6%] left-0 z-23 opacity-40 scale-y-80 w-screen h-auto max-sm:scale-y-130' /> */}
             <Image
                         src={footer}
@@ -55,21 +55,11 @@ const Tiket = () => {
                     </div>
                     <div className='flex flex-col items-center gap-3 max-lg:w-full max-lg:flex-row max-lg:items-stretch max-lg:gap-3 max-sm:w-full max-sm:flex-row max-sm:items-stretch max-sm:gap-3'>
                         <div className='flex h-[380px] w-[320px] flex-col items-center justify-center rounded-[22px] bg-gradient-to-b from-[#B9397E] to-[#E7654D] text-white shadow-[0_10px_24px_rgba(0,0,0,0.25)] max-lg:h-[200px] max-lg:w-[80%] max-sm:h-[140px] max-sm:w-[80%]'>
-                            <span className='text-5xl font-extrabold tracking-wide max-sm:text-xl'>PRESALE</span>
-                            <span className='text-9xl font-extrabold max-lg:text-5xl max-sm:text-3xl'>2</span>
+                            <span className='whitespace-nowrap text-6xl font-extrabold tracking-wide max-lg:text-4xl max-sm:text-2xl'>REGULER</span>
                         </div>
                         <div className='text-4xl font-extrabold uppercase max-lg:bg-gradient-to-b max-lg:from-[#B9397E] max-lg:to-[#E7654D] max-lg:shadow-[0_10px_24px_rgba(0,0,0,0.25)] max-lg:rounded-lg max-lg:text-white/90 max-lg:flex max-lg:w-[20%] max-lg:items-center max-lg:justify-center max-lg:text-xs max-sm:bg-gradient-to-b max-sm:from-[#B9397E] max-sm:to-[#E7654D] max-sm:shadow-[0_10px_24px_rgba(0,0,0,0.25)] max-sm:rounded-lg text-white/90 max-sm:flex max-sm:w-[20%] max-sm:items-center max-sm:justify-center max-sm:text-xs'>
                             <span className='max-lg:rotate-90 max-sm:rotate-90 max-sm:text-[14px] max-lg:text-2xl'>TBA</span>
                         </div>
-                    </div>
-                    <div className='flex flex-col items-center gap-3 max-lg:w-full max-lg:flex-row max-lg:items-stretch max-lg:gap-3 max-sm:w-full max-sm:flex-row max-sm:items-stretch max-sm:gap-3'>
-                        <div className='flex h-[380px] w-[320px] flex-col items-center justify-center rounded-[22px] bg-gradient-to-b from-[#DF604D] to-[#F5B03C] text-white shadow-[0_10px_24px_rgba(0,0,0,0.25)] max-lg:h-[200px] max-lg:w-[80%] max-sm:h-[140px] max-sm:w-[80%]'>
-                            <span className='text-5xl font-extrabold tracking-wide max-sm:text-xl'>PRESALE</span>
-                            <span className='text-9xl font-extrabold max-lg:text-5xl max-sm:text-3xl'>3</span>
-                        </div>
-                        <div className='text-4xl font-extrabold uppercase max-lg:bg-gradient-to-b max-lg:from-[#DF604D] max-lg:to-[#F5B03C] max-lg:shadow-[0_10px_24px_rgba(0,0,0,0.25)] max-lg:rounded-lg max-lg:text-white/90 max-lg:flex max-lg:w-[20%] max-lg:items-center max-lg:justify-center max-lg:text-xs max-sm:bg-gradient-to-b max-sm:from-[#DF604D] max-sm:to-[#F5B03C] max-sm:shadow-[0_10px_24px_rgba(0,0,0,0.25)] max-sm:rounded-lg text-white/90 max-sm:flex max-sm:w-[20%] max-sm:items-center max-sm:justify-center max-sm:text-xs'>
-                            <span className='max-lg:rotate-90 max-sm:rotate-90 max-sm:text-[14px] max-lg:text-2xl'>TBA</span>
-                        </div>                    
                     </div>
                 </div>
                 <a
@@ -112,7 +102,7 @@ const Tiket = () => {
                 </div>
                 <div className='relative flex w-full justify-center'>
                     
-                    <div className='pointer absolute bottom-0 translate-y-[680%] max-sm:translate-y-[320%] max-lg:translate-y-[240%] flex items-center justify-center'>
+                    <div className='pointer absolute bottom-0 translate-y-[680%] max-sm:translate-y-[300%] max-lg:translate-y-[240%] flex items-center justify-center'>
                         <div className='pointer-events-auto flex items-center gap-6 max-sm:gap-3'>
                             <a
                                 href='https://www.instagram.com/farmasicup?igsh=MW0yaXZ6YjlleXFlZA=='

@@ -6,6 +6,7 @@ import cupihead from '../../public/webp/cupihead.webp'
 import kuning from '../../public/webp/kuning.webp'
 import bggs from '../../public/webp/bggs.webp'
 import gs1 from '../../public/webp/gs1.webp'
+import pamungkas from '../../public/webp/pamungkas.webp'
 import festrona from '../../public/webp/festrona.webp'
 import bintang1 from '../../public/webp/bintang1.webp'
 import bintang2 from '../../public/webp/bintang2.webp'
@@ -61,13 +62,20 @@ const Gueststar = () => {
       {/* <Image src={festrona} alt="Festrona" className='absolute bottom-0 translate-y-[65%] right-[-3%] z-7 w-[600px] h-auto max-lg:w-[320px] max-sm:w-[220px] blur-[4px]' /> */}
       
 
-      <div className='relative z-10 mt-[10%] max-sm:mt-[20%] flex w-full flex-wrap items-center justify-center gap-8 max-sm:gap-3'>
+      <div className='relative z-10 mt-[10%] max-sm:mt-[20%] flex w-full flex-wrap items-end justify-center gap-0 max-sm:gap-0'>
         <Image
           src={gs1}
-          alt='Guest Star'
+          alt='Guest Star Perunggu'
           width={600}
           height={800}
-          className='h-auto w-[28%] max-h-[55vh] max-lg:w-[45%] max-lg:max-h-[40vh] max-sm:w-[65%] max-sm:max-h-[35vh]'
+          className='h-auto w-[28%] max-h-[55vh] object-contain max-lg:w-[45%] max-lg:max-h-[40vh] max-sm:w-[46%] max-sm:max-h-[35vh]'
+        />
+        <Image
+          src={pamungkas}
+          alt='Guest Star Pamungkas'
+          width={600}
+          height={800}
+          className='h-auto w-[24%] max-h-[55vh] object-contain max-lg:w-[36%] max-lg:max-h-[52vh] max-sm:w-[38%] max-sm:max-h-[45vh]'
         />
         {/* {[0, 1, 2, 3].map((index) => (
           <div
