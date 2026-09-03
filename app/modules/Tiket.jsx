@@ -47,10 +47,10 @@ const Tiket = () => {
                     <div className='flex flex-col items-center gap-3 max-lg:w-full max-lg:flex-row max-lg:items-stretch max-lg:gap-2 max-sm:w-full max-sm:flex-row max-sm:items-stretch max-sm:gap-2'>
                         <div className='flex h-[380px] w-[320px] flex-col items-center justify-center rounded-[22px] bg-gradient-to-b from-[#963424] to-[#BE3A85] text-white shadow-[0_10px_24px_rgba(0,0,0,0.25)] max-lg:h-[200px] max-lg:w-[80%] max-sm:h-[140px] max-sm:w-[80%]'>
                             <span className='text-5xl font-extrabold tracking-wide max-sm:text-xl'>PRESALE</span>
-                            <span className='text-9xl font-extrabold max-lg:text-5xl max-sm:text-3xl'>1</span>
+                            <span className='text-9xl font-extrabold max-lg:text-5xl max-sm:text-[14px]'>1</span>
                         </div>
-                        <div className='text-4xl font-extrabold uppercase max-lg:bg-gradient-to-b max-lg:from-[#963424] max-lg:to-[#BE3A85] max-lg:shadow-[0_10px_24px_rgba(0,0,0,0.25)] max-lg:rounded-lg max-lg:text-white/90 max-lg:flex max-lg:w-[20%] max-lg:items-center max-lg:justify-center max-lg:text-xs max-sm:bg-gradient-to-b max-sm:from-[#963424] max-sm:to-[#BE3A85] max-sm:shadow-[0_10px_24px_rgba(0,0,0,0.25)] max-sm:rounded-lg text-white/90 max-sm:flex max-sm:w-[20%] max-sm:items-center max-sm:justify-center max-sm:text-xs'>
-                            <span className='max-lg:rotate-90 max-sm:rotate-90 max-sm:text-[14px] max-lg:text-2xl text-6xl tracking-widest'>129K</span>
+                        <div className='text-4xl font-extrabold uppercase max-lg:bg-gradient-to-b max-lg:from-[#963424] max-lg:to-[#BE3A85] max-lg:shadow-[0_10px_24px_rgba(0,0,0,0.25)] max-lg:rounded-lg max-lg:text-white/90 max-lg:flex max-lg:w-[20%] max-lg:items-center max-lg:justify-center max-lg:text-xs max-sm:bg-gradient-to-b max-sm:from-[#963424] max-sm:to-[#BE3A85] max-sm:shadow-[0_10px_24px_rgba(0,0,0,0.25)] max-sm:rounded-lg text-white/90 max-sm:flex max-sm:w-[20%] max-sm:items-center max-sm:justify-center max-sm:text-xs text-center'>
+                            <span className='max-lg:rotate-90 max-sm:rotate-90 max-sm:text-[14px] max-lg:text-2x'>SOLD OUT!</span>
                         </div>
                     </div>
                     <div className='flex flex-col items-center gap-3 max-lg:w-full max-lg:flex-row max-lg:items-stretch max-lg:gap-3 max-sm:w-full max-sm:flex-row max-sm:items-stretch max-sm:gap-3'>
@@ -58,7 +58,7 @@ const Tiket = () => {
                             <span className='whitespace-nowrap text-6xl font-extrabold tracking-wide max-lg:text-4xl max-sm:text-2xl'>REGULER</span>
                         </div>
                         <div className='text-4xl font-extrabold uppercase max-lg:bg-gradient-to-b max-lg:from-[#B9397E] max-lg:to-[#E7654D] max-lg:shadow-[0_10px_24px_rgba(0,0,0,0.25)] max-lg:rounded-lg max-lg:text-white/90 max-lg:flex max-lg:w-[20%] max-lg:items-center max-lg:justify-center max-lg:text-xs max-sm:bg-gradient-to-b max-sm:from-[#B9397E] max-sm:to-[#E7654D] max-sm:shadow-[0_10px_24px_rgba(0,0,0,0.25)] max-sm:rounded-lg text-white/90 max-sm:flex max-sm:w-[20%] max-sm:items-center max-sm:justify-center max-sm:text-xs'>
-                            <span className='max-lg:rotate-90 max-sm:rotate-90 max-sm:text-[14px] max-lg:text-2xl'>TBA</span>
+                            <span className='max-lg:rotate-90 max-sm:rotate-90 max-sm:text-3xl max-lg:text-2xl text-6xl tracking-widest'>149k</span>
                         </div>
                     </div>
                 </div>
